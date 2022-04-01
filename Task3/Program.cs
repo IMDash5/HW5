@@ -1,4 +1,4 @@
-﻿void FillArray(int[] collection)
+﻿void FillArray(double[] collection)
 {
     int len = collection.Length;
     int i = 0;
@@ -9,7 +9,7 @@
     }
 }
 
-void PrintArray(int[] col)
+void PrintArray(double[] col)
 {
     int count = col.Length;
     for(int pos = 0; pos < count - 1; pos++)
@@ -22,11 +22,11 @@ void PrintArray(int[] col)
     }
 }
 
-int FindDif(int[] arg)
+double FindDif(double[] arg)
 {
-    int max = arg[0];
-    int min = arg[0];
-    int dif = 0;
+    double max = arg[0];
+    double min = arg[0];
+    double dif = 0;
     int length = arg.Length;
     for (int i = 1; i < length; i++ )
     {
@@ -46,12 +46,12 @@ int FindDif(int[] arg)
     return dif;
 }
 
-int[] array = new int[5];
+double[] array = new double[5];
 
 FillArray(array);
 PrintArray(array);
 
 Console.WriteLine();
 
-int result = FindDif(array);
+double result = FindDif(array);
 Console.WriteLine(result);
